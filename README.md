@@ -18,12 +18,15 @@
 - csv - для записи данных в файл
 
 ## Автор:
+
 Zebra_Developer
-Моя визитка - 
+
+Моя визитка - https://my-business-card-4qs2.onrender.com 
 
 ## Установка и запуск:
 
 ```bash
 git clone https://github.com/Zebra-developer/book-scraper.git
 pip install -r requirements.txt
+
 python main.py
