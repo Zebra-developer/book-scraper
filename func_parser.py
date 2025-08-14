@@ -5,7 +5,7 @@ from time import sleep
 
 # заголовки для парсинга
 headers = {
-	'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0'
+	'User-Agent': 'Mozilla/5.0'
 	}
 
 
@@ -42,5 +42,6 @@ def array():
 		info_book = book_info.findAll('p', limit=4)[-1].text
 		price_book = book_info.find('p', class_='price_color').text
 		img_book = 'https://books.toscrape.com/' + book_info.find('img').get('src')
+
 
 		yield (name_book, info_book, price_book, img_book) # возвращаем кортежи с данными по товару
